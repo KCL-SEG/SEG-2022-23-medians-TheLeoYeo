@@ -9,4 +9,9 @@ while True:
         print("Some input could not be converted to a number!")
     else:
         break
-print(numbers)
+    
+    
+length = len(numbers)
+numbers.sort()
+avg = (numbers[length//2] + numbers[(length-1)//2])/2
+print(avg)
